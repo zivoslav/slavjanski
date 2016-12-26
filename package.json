@@ -1,0 +1,22 @@
+{
+  "name": "slavjanski",
+  "version": "0.0.1",
+  "scripts": {
+    "compile-elm": "elm make ./src/app/Main.elm --yes --output ./build/dev/scripts/app.js",
+    "compile-php": "php ./src/index.php --debug --typescript >  ./build/dev/index.html",
+    "compile-typescript": "tsc ./src/scripts/index.ts --outFile  ./build/dev/scripts/index.js",
+    "clean": "rm -r ./build",
+    "test": "elm-test"
+  },
+  "author": {
+    "name": "Петр Болф",
+    "email": "petr.bolf@domogled.com",
+    "url": "http://domogled.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://app@pluto.rosti.cz:10521/srv/git/slavjanski.git"
+  },
+  "description": "Tools for slavic languages",
+  "license": "BSD-2-Clause-FreeBSD"
+}
